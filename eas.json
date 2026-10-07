@@ -1,0 +1,20 @@
+{
+  "cli": {
+    "version": ">= 18.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "production": {
+      "distribution": "internal",
+      "autoIncrement": true,
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://crypto-api-rust.athenastudio.my.id/api/",
+        "EXPO_PUBLIC_WS_URL": "wss://crypto-api-rust.athenastudio.my.id/api/",
+        "EXPO_PUBLIC_CHART_URL": "https://crypto-web.athenastudio.my.id/"
+      }
+    }
+  }
+}
